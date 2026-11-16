@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Rafael Chaveiro 24H em Paulínia: abertura de portas, cópia de chaves e fechaduras. Chame no WhatsApp.">
+<meta name="theme-color" content="#1C1B19">
+<title>Rafael Chaveiro 24H — Chaveiro em Paulínia</title>
+<style>
+:root{--bg:#1C1B19;--bg2:#262421;--card:#2d2a26;--line:#3b3731;--txt:#f3efe8;--mut:#b5ada0;--acc:#e8a33d;--acc2:#c98515;--wa:#25d366}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.demo{background:var(--acc);color:#1C1B19;font-size:13px;text-align:center;padding:8px 16px}
+header{position:sticky;top:0;z-index:10;background:rgba(28,27,25,.95);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{font-weight:800;letter-spacing:3px;font-size:20px}
+.logo span{color:var(--acc)}
+nav{display:flex;gap:22px;font-size:14px;color:var(--mut);align-items:center}
+nav a:hover{color:var(--txt)}
+.btn{display:inline-block;background:var(--acc);color:#1C1B19;font-weight:700;padding:12px 22px;border-radius:8px;font-size:15px;transition:background .2s}
+.btn:hover{background:var(--acc2)}
+.btn.out{background:transparent;color:var(--txt);border:1px solid var(--line)}
+.btn.out:hover{border-color:var(--acc);background:transparent}
+.btn.wa{background:var(--wa);color:#08301a}
+.hero{padding:72px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+h1{font-size:clamp(34px,5.5vw,56px);line-height:1.1;margin-bottom:18px}
+h1 em{color:var(--acc);font-style:normal}
+.hero p{color:var(--mut);font-size:18px;margin-bottom:28px;max-width:520px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.live{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+.live small{color:var(--acc);font-weight:700;letter-spacing:1px;text-transform:uppercase;font-size:12px}
+.live h3{font-size:22px;margin:8px 0 14px}
+.live li{list-style:none;padding:9px 0;border-top:1px solid var(--line);color:var(--mut);font-size:15px}
+.live li b{color:var(--txt)}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--wa);margin-right:8px}
+.stats{background:var(--bg2);border-block:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding-block:28px;text-align:center}
+.stats b{display:block;font-size:30px;color:var(--acc)}
+.stats span{color:var(--mut);font-size:14px}
+section{padding:72px 0}
+h2{font-size:clamp(26px,4vw,36px);margin-bottom:10px}
+.sub{color:var(--mut);margin-bottom:36px;max-width:560px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+.card h3{font-size:18px;margin:10px 0 6px}
+.card p{color:var(--mut);font-size:15px}
+.ico{width:44px;height:44px;border-radius:10px;background:rgba(232,163,61,.14);color:var(--acc);display:grid;place-items:center;font-size:22px}
+.alt{background:var(--bg2);border-block:1px solid var(--line)}
+.price{font-size:30px;font-weight:800;color:var(--acc);margin:6px 0 12px}
+.price small{font-size:14px;color:var(--mut);font-weight:400}
+.card ul{list-style:none;color:var(--mut);font-size:15px;margin-bottom:18px}
+.card li{padding:5px 0 5px 22px;position:relative}
+.card li::before{content:"✓";color:var(--acc);position:absolute;left:0}
+.steps{counter-reset:s}
+.steps .card{position:relative}
+.steps .card::before{counter-increment:s;content:counter(s);font-size:34px;font-weight:800;color:var(--acc);display:block}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.gal div{aspect-ratio:4/3;border-radius:12px;border:1px dashed var(--line);background:var(--card);display:grid;place-items:center;color:var(--mut);font-size:13px;text-align:center;padding:10px}
+.quote{font-size:15px;color:var(--mut)}
+.who{display:flex;align-items:center;gap:12px;margin-top:16px;font-size:14px}
+.av{width:40px;height:40px;border-radius:50%;background:var(--acc);color:#1C1B19;font-weight:800;display:grid;place-items:center}
+.who span{color:var(--mut);display:block;font-size:13px}
+.final{text-align:center}
+.final .sub{margin-inline:auto}
+footer{background:#141311;border-top:1px solid var(--line);padding:48px 0 28px;font-size:14px;color:var(--mut)}
+.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;margin-bottom:28px}
+footer h4{color:var(--txt);margin-bottom:10px;font-size:15px}
+footer li{list-style:none;padding:3px 0}
+.copy{border-top:1px solid var(--line);padding-top:18px;font-size:13px}
+.map{margin-top:12px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.map iframe{display:block;width:100%;height:170px;border:0}
+.map a{display:block;padding:8px 12px;font-size:13px;color:var(--acc)}
+.float{position:fixed;right:18px;bottom:18px;z-index:20;background:var(--wa);color:#fff;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.4);transition:transform .2s}
+.float:hover{transform:scale(1.08)}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}.stats .wrap{grid-template-columns:repeat(2,1fr)}nav a.l{display:none}}
+</style>
+</head>
+<body>
+<div class="demo">Rascunho de site feito para o <b>Rafael Chaveiro 24H</b>. Textos, serviços e fotos serão ajustados com as informações do negócio.</div>
+<header>
+<div class="wrap nav">
+<a class="logo" href="#">RAFAEL CHAVEIRO <span>24H</span></a>
+<nav>
+<a class="l" href="#servicos">Serviços</a>
+<a class="l" href="#orcamento">Orçamento</a>
+<a class="l" href="#contato">Contato</a>
+</nav>
+</div>
+</header>
+<main>
+<section class="hero">
+<div class="wrap">
+<div>
+<h1>Porta trancada? Chame agora no <em>WhatsApp</em>.</h1>
+<p>Abertura de portas, cópia de chaves e troca de fechaduras em Paulínia. Conte o que precisa e receba o valor pelo WhatsApp.</p>
+<div class="cta">
+<a class="btn wa" href="https://wa.me/5519989730101?text=Ol%C3%A1%21%20Preciso%20de%20um%20chaveiro." target="_blank" rel="noopener">Chamar agora no WhatsApp</a>
+<a class="btn out" href="#servicos">Ver serviços</a>
+</div>
+</div>
+<div class="live">
+<small><span class='dot'></span>Rafael Chaveiro 24H</small>
+<h3>Atendimento</h3>
+<ul><li>Plantão 24 horas, todos os dias</li><li><b>Contato</b> — (19) 98973-0101</li><li><b>Endereço</b> — Av. José Paulino, 1681 - Jardim de Itapoan</li></ul>
+</div>
+</div>
+</section>
+<div class="stats">
+<div class="wrap" style="grid-template-columns:repeat(3,1fr)">
+<div><b>5,0</b><span>Nota no Google</span></div>
+<div><b>7</b><span>Avaliações no Google</span></div>
+<div><b>24h</b><span>Plantão todos os dias</span></div>
+</div>
+</div>
+<section id="servicos">
+<div class="wrap">
+<h2>O que a gente resolve</h2>
+<p class="sub">Serviços de chaveiro para residências, comércios e veículos em Paulínia e região.</p>
+<div class="grid"><div class="card"><div class="ico">🚪</div><h3>Abertura de portas</h3><p>Residências, apartamentos e comércios.</p></div><div class="card"><div class="ico">🔑</div><h3>Cópia de chaves</h3><p>Chaves simples, tetra e de cadeado.</p></div><div class="card"><div class="ico">🚗</div><h3>Chaves automotivas</h3><p>Abertura de carro e cópia de chaves de veículos.</p></div><div class="card"><div class="ico">🔒</div><h3>Troca de fechaduras</h3><p>Instalação e troca de fechaduras.</p></div></div>
+</div>
+</section>
+<section class="alt" id="orcamento">
+<div class="wrap">
+<h2>Orçamento sem compromisso</h2>
+<p class="sub">Cada serviço depende do tipo de fechadura e do horário. Você recebe o valor no WhatsApp antes de a gente começar.</p>
+<div class="grid">
+<div class="card"><h3>Cópia de chave</h3><ul><li>Chave simples ou tetra</li><li>Pronta na hora</li></ul><a class="btn out" href="https://wa.me/5519989730101?text=Ol%C3%A1%21%20Quero%20saber%20o%20valor%20de%20uma%20c%C3%B3pia%20de%20chave." target="_blank" rel="noopener">Consultar</a></div>
+<div class="card"><h3>Abertura de porta</h3><ul><li>Atendimento rápido</li><li>Valor combinado antes de começar</li></ul><a class="btn" href="https://wa.me/5519989730101?text=Ol%C3%A1%21%20Preciso%20abrir%20uma%20porta." target="_blank" rel="noopener">Chamar agora</a></div>
+<div class="card"><h3>Troca de fechadura</h3><ul><li>Instalação inclusa</li><li>Várias marcas</li></ul><a class="btn out" href="https://wa.me/5519989730101?text=Ol%C3%A1%21%20Quero%20trocar%20uma%20fechadura." target="_blank" rel="noopener">Consultar</a></div>
+</div>
+</div>
+</section>
+<section>
+<div class="wrap">
+<h2>Como funciona</h2>
+<p class="sub">Simples, do primeiro contato até o serviço resolvido.</p>
+<div class="grid steps">
+<div class="card"><h3>Você chama</h3><p>Manda uma mensagem no WhatsApp contando o que precisa e onde você está.</p></div>
+<div class="card"><h3>Passamos o valor</h3><p>Você recebe o orçamento antes de confirmar o serviço.</p></div>
+<div class="card"><h3>Resolvemos</h3><p>O chaveiro vai até você ou você vem até a loja, e o serviço é feito.</p></div>
+</div>
+</div>
+</section>
+<section class="alt final">
+<div class="wrap">
+<h2>Precisa de chaveiro agora?</h2>
+<p class="sub">Chama no WhatsApp, conta o que houve e a gente responde com o valor.</p>
+<a class="btn wa" href="https://wa.me/5519989730101?text=Ol%C3%A1%21%20Preciso%20de%20um%20chaveiro." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+</div>
+</section>
+</main>
+<footer id="contato">
+<div class="wrap">
+<div class="fg">
+<div><div class="logo" style="margin-bottom:10px">RAFAEL CHAVEIRO <span>24H</span></div>Av. José Paulino, 1681 - Jardim de Itapoan<br>Paulínia, SP
+<div class="map"><iframe title="Mapa com a localização do Rafael Chaveiro 24H" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Av.+Jos%C3%A9+Paulino%2C+1681+-+Jardim+de+Itapoan%2C+Paul%C3%ADnia%2C+SP&amp;output=embed"></iframe><a href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Jos%C3%A9+Paulino%2C+1681+-+Jardim+de+Itapoan%2C+Paul%C3%ADnia%2C+SP" target="_blank" rel="noopener">Abrir no Google Maps →</a></div></div>
+<div><h4>Funcionamento</h4><ul><li>Plantão 24 horas, todos os dias</li></ul></div>
+<div><h4>Contato</h4><ul><li>(19) 98973-0101</li></ul></div>
+</div>
+<div class="copy">© 2026 Rafael Chaveiro 24H · Rascunho de site desenvolvido por Gabriel</div>
+</div>
+</footer>
+<a class="float" href="https://wa.me/5519989730101?text=Ol%C3%A1%21%20Preciso%20de%20um%20chaveiro." target="_blank" rel="noopener" aria-label="Chamar no WhatsApp"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body>
+</html>
